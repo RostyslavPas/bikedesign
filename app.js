@@ -13,11 +13,14 @@ const translations = {
     prevAria: "Previous slide",
     nextAria: "Next slide",
     carouselPaginationAria: "Carousel pagination",
+    carouselHint: "Tap the image to open it full-screen",
     contactEyebrow: "Private Consultation",
     contactTitle: "Commission Your One-Off Masterpiece",
     contactDescription:
       "Speak with our atelier team to define palette, texture, metallic signature, and race-ready clearcoat specifications.",
-    telegramLabel: "Telegram: @rostyslavpas",
+    emailPrefix: "Contact Email",
+    telegramPrefix: "Telegram",
+    footerRights: "All rights reserved.",
     detailsButton: "Details",
     hideDetailsButton: "Hide Details",
     close: "Close",
@@ -41,11 +44,14 @@ const translations = {
     prevAria: "Попередній слайд",
     nextAria: "Наступний слайд",
     carouselPaginationAria: "Пагінація каруселі",
+    carouselHint: "Торкніться фото, щоб відкрити на весь екран",
     contactEyebrow: "Приватна консультація",
     contactTitle: "Замовте свій унікальний шедевр",
     contactDescription:
       "Поспілкуйтеся з нашою atelier-командою, щоб визначити палітру, текстури, металеві акценти та специфікацію гоночного захисного покриття.",
-    telegramLabel: "Telegram: @rostyslavpas",
+    emailPrefix: "Контактний Email",
+    telegramPrefix: "Телеграм",
+    footerRights: "Всі права захищено.",
     detailsButton: "Деталі",
     hideDetailsButton: "Сховати деталі",
     close: "Закрити",
@@ -192,15 +198,16 @@ const defaultLocale = localStorage.getItem("velosLocale") === "en" ? "en" : "ua"
 
 const state = {
   activeIndex: 0,
-  touchStartX: 0,
-  touchEndX: 0,
+  swipeStartX: 0,
+  swipeStartY: 0,
+  isPointerDown: false,
+  suppressTrackClick: false,
   locale: defaultLocale
 };
 
 const elements = {
   track: document.querySelector("#carouselTrack"),
   dots: document.querySelector("#carouselDots"),
-  counter: document.querySelector("#slideCounter"),
   prevButton: document.querySelector("#prevSlide"),
   nextButton: document.querySelector("#nextSlide"),
   lightbox: document.querySelector("#lightbox"),
@@ -214,7 +221,11 @@ const elements = {
   contactEyebrow: document.querySelector("#contactEyebrow"),
   contactTitle: document.querySelector("#contactTitle"),
   contactDescription: document.querySelector("#contactDescription"),
+  emailPrefix: document.querySelector("#emailPrefix"),
+  telegramPrefix: document.querySelector("#telegramPrefix"),
   telegramLink: document.querySelector("#telegramLink"),
+  footerYear: document.querySelector("#footerYear"),
+  footerRights: document.querySelector("#footerRights"),
   langUa: document.querySelector("#langUa"),
   langEn: document.querySelector("#langEn")
 };
@@ -262,7 +273,9 @@ function updateStaticContent() {
   elements.contactEyebrow.textContent = t("contactEyebrow");
   elements.contactTitle.textContent = t("contactTitle");
   elements.contactDescription.textContent = t("contactDescription");
-  elements.telegramLink.textContent = t("telegramLabel");
+  elements.emailPrefix.textContent = t("emailPrefix");
+  elements.telegramPrefix.textContent = t("telegramPrefix");
+  elements.footerRights.textContent = t("footerRights");
 
   elements.closeLightbox.textContent = t("close");
   elements.closeLightbox.setAttribute("aria-label", t("closePreviewAria"));
@@ -282,10 +295,11 @@ function renderSlides() {
 
       return `
         <article class="w-full shrink-0">
-          <div class="grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-start">
-            <div>
+          <div class="rounded-3xl border border-white/10 bg-black/40 p-3 sm:p-4">
+            <div class="grid gap-4 md:grid-cols-[1.4fr_1fr] md:items-stretch md:gap-6">
+            <div class="h-full">
               <button
-                class="group block w-full overflow-hidden rounded-2xl border border-white/10"
+                class="group relative block h-full w-full overflow-hidden rounded-2xl border border-white/10 active:scale-[0.995]"
                 data-lightbox-src="${bike.lightboxImage}"
                 data-lightbox-alt="${bike.title}"
                 aria-label="${openLabel}"
@@ -295,16 +309,29 @@ function renderSlides() {
                   alt="${imageAlt}"
                   class="h-[230px] w-full object-cover transition duration-700 group-hover:scale-[1.03] sm:h-[300px] md:h-[420px]"
                 />
+                <div class="pointer-events-none absolute right-3 top-3 rounded-full border border-luxeSilver/50 bg-black/45 p-2 text-luxeSilver backdrop-blur-sm">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 16v5h-5" />
+                  </svg>
+                </div>
+                <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-3 md:p-4">
+                  <span class="inline-flex items-center gap-2 rounded-full border border-luxeSilver/45 bg-black/35 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-luxeSilver backdrop-blur-sm">
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5h5v5M10 19H5v-5M19 5l-7 7M5 19l7-7" />
+                    </svg>
+                    ${t("carouselHint")}
+                  </span>
+                </div>
               </button>
             </div>
 
-            <div class="rounded-2xl border border-white/10 bg-black/25 p-5 md:p-6">
+            <div class="flex min-h-[248px] flex-col rounded-2xl border border-white/10 bg-black/25 p-5 md:min-h-[420px] md:p-6">
               <p class="text-xs uppercase tracking-[0.18em] text-luxeSilver/85">${bike.edition}</p>
-              <h3 class="mt-3 font-display text-2xl leading-tight text-luxeText">${bike.title}</h3>
-              <p class="mt-3 text-sm leading-relaxed text-white/75 sm:text-base">${shortDescription}</p>
+              <h3 class="card-title-clamp mt-3 font-display text-2xl leading-tight text-luxeText">${bike.title}</h3>
+              <p class="card-short-clamp mt-3 text-sm leading-relaxed text-white/75 sm:text-base">${shortDescription}</p>
 
               <button
-                class="details-toggle mt-5 rounded-full border border-luxeSilver/45 px-5 py-2 text-sm font-semibold tracking-wide text-luxeSilver transition hover:border-luxeSilver hover:bg-white/10"
+                class="details-toggle mt-auto rounded-full border border-luxeSilver/45 px-5 py-2 text-sm font-semibold tracking-wide text-luxeSilver transition hover:border-luxeSilver hover:bg-white/10"
                 data-target="details-${index}"
                 aria-expanded="false"
                 aria-controls="details-${index}"
@@ -316,6 +343,7 @@ function renderSlides() {
                 <p class="pt-4 text-sm leading-relaxed text-white/75 sm:text-base">${details}</p>
               </div>
             </div>
+          </div>
           </div>
         </article>
       `;
@@ -343,7 +371,6 @@ function renderDots() {
 
 function updateCarousel() {
   elements.track.style.transform = `translateX(-${state.activeIndex * 100}%)`;
-  elements.counter.textContent = `${state.activeIndex + 1} / ${bikeDesigns.length}`;
   renderDots();
 }
 
@@ -401,6 +428,12 @@ function closeLightbox() {
 
 // Single delegated click handler for details toggles and lightbox triggers.
 function handleTrackClick(event) {
+  // Prevent accidental tap/click after a completed swipe gesture.
+  if (state.suppressTrackClick) {
+    state.suppressTrackClick = false;
+    return;
+  }
+
   const detailsButton = event.target.closest(".details-toggle");
   if (detailsButton) {
     toggleDetails(detailsButton);
@@ -420,21 +453,70 @@ function handleDotsClick(event) {
   goToSlide(Number(dot.dataset.index));
 }
 
-function addTouchSupport() {
-  elements.track.addEventListener("touchstart", (event) => {
-    state.touchStartX = event.changedTouches[0].clientX;
+function addSwipeSupport() {
+  const swipeThreshold = 48;
+  const horizontalIntentThreshold = 12;
+
+  elements.track.addEventListener("pointerdown", (event) => {
+    if (!event.isPrimary) return;
+    // Keep desktop click behavior native; swipe is only for touch/pen pointers.
+    if (event.pointerType === "mouse") return;
+
+    state.isPointerDown = true;
+    state.swipeStartX = event.clientX;
+    state.swipeStartY = event.clientY;
+
+    if (elements.track.setPointerCapture) {
+      elements.track.setPointerCapture(event.pointerId);
+    }
   });
 
-  elements.track.addEventListener("touchend", (event) => {
-    state.touchEndX = event.changedTouches[0].clientX;
-    const deltaX = state.touchStartX - state.touchEndX;
+  elements.track.addEventListener("pointermove", (event) => {
+    if (!state.isPointerDown) return;
 
-    if (Math.abs(deltaX) < 45) return;
-    if (deltaX > 0) {
+    const deltaX = event.clientX - state.swipeStartX;
+    const deltaY = event.clientY - state.swipeStartY;
+    const isHorizontalIntent = Math.abs(deltaX) > horizontalIntentThreshold && Math.abs(deltaX) > Math.abs(deltaY);
+
+    if (isHorizontalIntent && event.cancelable) {
+      event.preventDefault();
+    }
+  });
+
+  const completeSwipe = (event) => {
+    if (!state.isPointerDown) return;
+    state.isPointerDown = false;
+
+    if (elements.track.releasePointerCapture && elements.track.hasPointerCapture?.(event.pointerId)) {
+      elements.track.releasePointerCapture(event.pointerId);
+    }
+
+    const deltaX = event.clientX - state.swipeStartX;
+    const deltaY = event.clientY - state.swipeStartY;
+    const isHorizontalSwipe = Math.abs(deltaX) >= swipeThreshold && Math.abs(deltaX) > Math.abs(deltaY);
+
+    if (!isHorizontalSwipe) return;
+
+    state.suppressTrackClick = true;
+    window.setTimeout(() => {
+      state.suppressTrackClick = false;
+    }, 0);
+
+    if (deltaX < 0) {
       goToSlide(state.activeIndex + 1);
     } else {
       goToSlide(state.activeIndex - 1);
     }
+  };
+
+  elements.track.addEventListener("pointerup", completeSwipe);
+  elements.track.addEventListener("pointercancel", () => {
+    state.isPointerDown = false;
+  });
+
+  // Prevent ghost image drag on desktop, keep click-to-open reliable.
+  elements.track.addEventListener("dragstart", (event) => {
+    event.preventDefault();
   });
 }
 
@@ -460,10 +542,11 @@ function bindEvents() {
     if (event.key === "ArrowLeft") goToSlide(state.activeIndex - 1);
   });
 
-  addTouchSupport();
+  addSwipeSupport();
 }
 
 function initCarousel() {
+  elements.footerYear.textContent = String(new Date().getFullYear());
   updateLanguageButtons();
   updateStaticContent();
   renderSlides();
