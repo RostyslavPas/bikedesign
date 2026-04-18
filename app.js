@@ -374,7 +374,27 @@ function updateCarousel() {
   renderDots();
 }
 
+function isMobileViewport() {
+  return window.matchMedia("(max-width: 767px)").matches;
+}
+
+function collapseExpandedDetails() {
+  const expandedButtons = elements.track.querySelectorAll('.details-toggle[aria-expanded="true"]');
+
+  expandedButtons.forEach((button) => {
+    const panelId = button.dataset.target;
+    const panel = document.getElementById(panelId);
+    if (!panel) return;
+
+    button.setAttribute("aria-expanded", "false");
+    button.textContent = t("detailsButton");
+    panel.classList.remove("expanded");
+    panel.classList.add("pt-0");
+  });
+}
+
 function goToSlide(index) {
+  const previousIndex = state.activeIndex;
   const max = bikeDesigns.length - 1;
   if (index < 0) {
     state.activeIndex = max;
@@ -382,6 +402,10 @@ function goToSlide(index) {
     state.activeIndex = 0;
   } else {
     state.activeIndex = index;
+  }
+
+  if (state.activeIndex !== previousIndex && isMobileViewport()) {
+    collapseExpandedDetails();
   }
 
   updateCarousel();
