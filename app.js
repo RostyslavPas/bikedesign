@@ -191,6 +191,34 @@ const bikeDesigns = [
     },
     coverImage: "Pictures/preview/9.png",
     lightboxImage: "Pictures/full/9-MuseumMasterpiece.png"
+  },
+  {
+    edition: "MOLTEN EMBER",
+    title: "MOLTEN EMBER",
+    shortDescription: {
+      en: "Velvet-matte ember red with a molten silver logo and fiery glitch internals.",
+      ua: "Оксамитовий ember-red із «рідким» срібним логотипом та вогняним glitch усередині рами."
+    },
+    details: {
+      en: "A deep matte ember-red finish gives the frame a dense, heat-soaked presence. Inner fork, stays, and seat-tube surfaces feature a lava-style glitch mix of orange, charcoal black, and deep red. The main \"Cervélo\" logo is rendered in polished liquid silver for high-contrast impact against the matte body. Darkened blue bar tape and tan-wall tires complete the race-limited character.",
+      ua: "Глибокий матовий ember-red надає рамі ефекту щільного розпеченого металу. Внутрішні поверхні вилки, пір'їв і підсідельної труби отримали lava-style glitch мікс із помаранчевого, вугільно-чорного та глибокого червоного. Основний логотип \"Cervélo\" виконаний у полірованому рідкому сріблі для максимального контрасту з матовою основою. Темніша синя обмотка керма та tan-wall покришки завершують образ лімітованого гоночного дизайну."
+    },
+    coverImage: "Pictures/preview/10.png",
+    lightboxImage: "Pictures/full/10-MoltenEmber.png"
+  },
+  {
+    edition: "NARDO SPECTER",
+    title: "NARDO SPECTER",
+    shortDescription: {
+      en: "Stealth matte Nardo Grey with liquid silver branding and ghost-speed attitude.",
+      ua: "Стелс-матовий Nardo Grey із liquid-silver брендингом та характером «невидимої швидкості»."
+    },
+    details: {
+      en: "This concept is built around a rich matte Nardo Grey that absorbs light and emphasizes silent speed. The down-tube \"Cervélo\" mark appears in polished liquid silver, creating a sharp technical contrast over the dark body. Accents stay restrained: deeper blue bar tape and warm tan-wall tires balance the cold-metal look. The final effect is clean, elusive, and highly performance-focused.",
+      ua: "Концепт побудований навколо насиченого матового Nardo Grey, що поглинає світло й підкреслює «тиху» швидкість. Логотип \"Cervélo\" на даунтюбі виконаний у полірованому liquid silver, формуючи чіткий технологічний контраст на темній рамі. Акценти стримані: темніша синя обмотка керма та теплі tan-wall покришки балансують холодний металевий характер. У підсумку дизайн виглядає чисто, невловимо й максимально гоночно."
+    },
+    coverImage: "Pictures/preview/11.png",
+    lightboxImage: "Pictures/full/11-NardoSpecter.png"
   }
 ];
 
