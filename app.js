@@ -4,7 +4,7 @@ const translations = {
     documentTitle: "PASUE VELO | Premium Bicycle Customization",
     navContact: "Contact",
     heroEyebrow: "Bespoke Performance Aesthetics",
-    heroTitle: "Art in Motion: Custom Cervelo S5 Editions",
+    heroTitleTemplate: "Art in Motion: Custom {model} Editions",
     heroSubtitle:
       "PASUE VELO transforms elite racing frames into collectible statements with handcrafted finishes, precision metallics, and couture-level detailing tailored to your vision.",
     collectionTitle: "Signature Collection",
@@ -12,6 +12,7 @@ const translations = {
     next: "Next",
     prevAria: "Previous slide",
     nextAria: "Next slide",
+    tabsAria: "Bike model tabs",
     carouselPaginationAria: "Carousel pagination",
     carouselHint: "Tap the image to open it full-screen",
     contactEyebrow: "Private Consultation",
@@ -35,7 +36,7 @@ const translations = {
     documentTitle: "PASUE VELO | Преміальна кастомізація велосипедів",
     navContact: "Контакт",
     heroEyebrow: "Преміальна естетика швидкості",
-    heroTitle: "Мистецтво в русі: кастомні Cervelo S5 Editions",
+    heroTitleTemplate: "Мистецтво в русі: кастомні {model} Editions",
     heroSubtitle:
       "PASUE VELO перетворює елітні шосейні рами на колекційні арт-об'єкти завдяки ручному фарбуванню, точній металізації та кутюрному рівню деталізації під ваше бачення.",
     collectionTitle: "Фірмова колекція",
@@ -43,6 +44,7 @@ const translations = {
     next: "Далі",
     prevAria: "Попередній слайд",
     nextAria: "Наступний слайд",
+    tabsAria: "Таби моделей велосипедів",
     carouselPaginationAria: "Пагінація каруселі",
     carouselHint: "Торкніться фото, щоб відкрити на весь екран",
     contactEyebrow: "Приватна консультація",
@@ -219,12 +221,133 @@ const bikeDesigns = [
     },
     coverImage: "Pictures/preview/11.png",
     lightboxImage: "Pictures/full/11-NardoSpecter.png"
+  },
+  {
+    edition: "VISMA LEASE A BIKE TDF EDITION",
+    title: "RENAISSANCE YELLOW",
+    shortDescription: {
+      en: "Tour de France team concept in race yellow with stealth black aero contrast.",
+      ua: "Командний TDF-концепт у race-yellow з контрастними stealth-black аеро-зонами."
+    },
+    details: {
+      en: "Designed as a special concept for Team Visma | Lease a Bike, this edition combines high-energy race yellow with deep matte black architecture for maximum peloton visibility and speed-focused presence. The primary \"Cervélo\" branding is rendered in polished silver for crisp contrast, while technical zones stay restrained and performance-clean. The final look is bold, elite, and unmistakably Grand Tour.",
+      ua: "Спеціально розроблений концепт для Team Visma | Lease a Bike: поєднання енергійного race-yellow із глибокою матово-чорною аеро-архітектурою для максимальної видимості в пелотоні та відчуття швидкості. Основний брендинг \"Cervélo\" виконаний у полірованому сріблі для чіткого контрасту, а технічні зони залишені стриманими й «чистими». У підсумку дизайн сміливий, елітний і безпомилково рівня Grand Tour."
+    },
+    coverImage: "Pictures/preview/12.png",
+    lightboxImage: "Pictures/full/12-Renaissance.png"
   }
 ];
+
+const pinarelloDesigns = [
+  {
+    edition: "DOGMA F ATELIER",
+    title: "ARGENTO CORSA",
+    shortDescription: {
+      en: "Satin race silver over a stealth base with refined pro-level contrast.",
+      ua: "Сатинове race-silver на стелс-базі з вивіреним pro-level контрастом."
+    },
+    details: {
+      en: "A restrained silver-forward concept tuned for modern race geometry. Satin metallic surfaces alternate with deep graphite zones, while core branding is finished in liquid-bright silver. The result is precise, technical, and unmistakably premium.",
+      ua: "Стримана silver-концепція, адаптована під сучасну гоночну геометрію. Сатинові металічні площини чергуються з глибокими графітовими зонами, а ключовий брендинг виконаний у рідкому яскравому сріблі. У результаті дизайн точний, технічний і однозначно преміальний."
+    },
+    coverImage: "Pictures/preview/3.png",
+    lightboxImage: "Pictures/full/3-MidnightEmerald.png"
+  },
+  {
+    edition: "DOGMA F SHADOW",
+    title: "CARBON NOIR",
+    shortDescription: {
+      en: "Matte black architecture with forged texture accents and stealth graphics.",
+      ua: "Матовий чорний силует із forged-текстурою та stealth-графікою."
+    },
+    details: {
+      en: "Built around layered blacks and low-visibility detailing, this theme emphasizes speed through texture, not color noise. Forged-style inserts appear under directional light, while dark chrome marks keep the frame monolithic and aggressive.",
+      ua: "Побудований на багатошаровому чорному й low-visibility деталях, цей варіант підкреслює швидкість текстурою, а не шумом кольору. Вставки у forged-стилі проявляються в направленому світлі, а темний хром брендингу зберігає монолітний агресивний характер рами."
+    },
+    coverImage: "Pictures/preview/6.png",
+    lightboxImage: "Pictures/full/6-OnyxCarbonStealth.png"
+  },
+  {
+    edition: "DOGMA F ART LINE",
+    title: "VIOLET PULSE",
+    shortDescription: {
+      en: "Electro-violet motion fade with polished silver script and race intent.",
+      ua: "Рухомий electro-violet fade із полірованим silver script та гоночним характером."
+    },
+    details: {
+      en: "A high-energy violet gradient shifts from rich purple to dark graphite at the rear triangle. Mirror-polished silver branding adds a jewelry-grade highlight, while inner-frame accents stay subtle to keep the silhouette race-clean.",
+      ua: "Енергійний violet-градієнт переходить від насиченого фіолетового до темного графіту на задньому трикутнику. Дзеркально-полірований срібний брендинг додає ювелірний акцент, а внутрішні елементи залишаються стриманими, зберігаючи чистий гоночний силует."
+    },
+    coverImage: "Pictures/preview/1.png",
+    lightboxImage: "Pictures/full/1-VioletShift.png"
+  }
+];
+
+const sWorksDesigns = [
+  {
+    edition: "SL8 FACTORY SERIES",
+    title: "STEALTH TITANIUM",
+    shortDescription: {
+      en: "Graphite-steel blend with satin silver detailing and wind-cut precision.",
+      ua: "Суміш graphite-steel із сатиновими silver-деталями та аеродинамічною точністю."
+    },
+    details: {
+      en: "A cool technical palette designed to emphasize the SL8 silhouette. The matte graphite body is balanced by titanium-silver accents on logo zones and cockpit details, delivering a surgical and ultra-modern finish.",
+      ua: "Холодна технічна палітра, що підкреслює силует SL8. Матове graphite-покриття врівноважене titanium-silver акцентами в логотипних зонах та на деталях кокпіта, створюючи максимально сучасний і «точний» фініш."
+    },
+    coverImage: "Pictures/preview/11.png",
+    lightboxImage: "Pictures/full/11-NardoSpecter.png"
+  },
+  {
+    edition: "SL8 NIGHT RACE",
+    title: "EMERALD SHADOW",
+    shortDescription: {
+      en: "Dark emerald matte with chrome-black branding for stealth race presence.",
+      ua: "Темний emerald matte із chrome-black брендингом для stealth-гоночного образу."
+    },
+    details: {
+      en: "Nearly black indoors, alive with emerald depth in sunlight. Branding is treated in dark chrome to preserve the stealth character, while selective silver technical marks keep visual hierarchy clear at speed.",
+      ua: "У приміщенні майже чорний, а на сонці розкриває глибину emerald-відтінку. Брендинг виконаний у темному хромі для збереження stealth-стилю, а точкові срібні технічні мітки тримають чітку візуальну ієрархію на швидкості."
+    },
+    coverImage: "Pictures/preview/10.png",
+    lightboxImage: "Pictures/full/10-MoltenEmber.png"
+  },
+  {
+    edition: "SL8 ICON EDITION",
+    title: "PEARL VELOCITY",
+    shortDescription: {
+      en: "Iridescent pearl white with subtle cosmic undertones and clean silver marks.",
+      ua: "Іридисцентний перламутровий білий із космічними півтонами та чистим silver-маркуванням."
+    },
+    details: {
+      en: "A layered pearl finish creates dynamic pink-green-blue shifts under motion. Satin silver branding keeps the bike elegant and controlled, while the bright body tone delivers immediate visual distinction in a race group.",
+      ua: "Багатошаровий перламутровий фініш формує динамічні рожево-зелено-блакитні переливи в русі. Сатиновий срібний брендинг зберігає елегантність і контроль, а світлий корпус миттєво виділяє велосипед у гоночній групі."
+    },
+    coverImage: "Pictures/preview/8.png",
+    lightboxImage: "Pictures/full/8-PearlescentFrost.png"
+  }
+];
+
+const comingSoonImage = "Pictures/placeholders/coming-soon.svg";
+
+for (const design of [...pinarelloDesigns, ...sWorksDesigns]) {
+  design.coverImage = comingSoonImage;
+  design.lightboxImage = comingSoonImage;
+}
+
+// Add new bike tabs by appending another object to this list.
+const bikeCollections = [
+  { id: "cervelo-s5", label: "Cervelo S5", designs: bikeDesigns },
+  { id: "pinarello-dogma-f", label: "Pinarello Dogma F", designs: pinarelloDesigns },
+  { id: "s-works-sl8", label: "S-Works SL8", designs: sWorksDesigns }
+];
+
+const bikeCollectionsById = Object.fromEntries(bikeCollections.map((collection) => [collection.id, collection]));
 
 const defaultLocale = localStorage.getItem("velosLocale") === "en" ? "en" : "ua";
 
 const state = {
+  activeModelId: bikeCollections[0].id,
   activeIndex: 0,
   swipeStartX: 0,
   swipeStartY: 0,
@@ -234,6 +357,7 @@ const state = {
 };
 
 const elements = {
+  bikeTabs: document.querySelector("#bikeTabs"),
   track: document.querySelector("#carouselTrack"),
   dots: document.querySelector("#carouselDots"),
   prevButton: document.querySelector("#prevSlide"),
@@ -267,6 +391,19 @@ function localizeValue(value) {
   return value[state.locale] ?? value.en;
 }
 
+function getActiveCollection() {
+  return bikeCollectionsById[state.activeModelId] ?? bikeCollections[0];
+}
+
+function getActiveDesigns() {
+  return getActiveCollection().designs;
+}
+
+function getHeroTitle() {
+  const modelLabel = getActiveCollection().label;
+  return t("heroTitleTemplate").replace("{model}", modelLabel);
+}
+
 function updateLanguageButtons() {
   const buttons = [elements.langUa, elements.langEn];
   buttons.forEach((button) => {
@@ -281,13 +418,37 @@ function updateLanguageButtons() {
   });
 }
 
+function renderBikeTabs() {
+  elements.bikeTabs.innerHTML = bikeCollections
+    .map((collection) => {
+      const isActive = collection.id === state.activeModelId;
+
+      return `
+        <button
+          class="bike-tab rounded-full border px-4 py-2 text-xs font-semibold tracking-[0.12em] transition sm:px-5 ${
+            isActive
+              ? "border-luxeSilver bg-luxeSilver text-black"
+              : "border-luxeSilver/40 text-luxeSilver hover:border-luxeSilver hover:bg-white/10"
+          }"
+          type="button"
+          role="tab"
+          aria-selected="${isActive}"
+          data-model-id="${collection.id}"
+        >
+          ${collection.label}
+        </button>
+      `;
+    })
+    .join("");
+}
+
 function updateStaticContent() {
   document.documentElement.lang = state.locale === "ua" ? "uk" : "en";
   document.title = t("documentTitle");
 
   elements.navContactBtn.textContent = t("navContact");
   elements.heroEyebrow.textContent = t("heroEyebrow");
-  elements.heroTitle.textContent = t("heroTitle");
+  elements.heroTitle.textContent = getHeroTitle();
   elements.heroSubtitle.textContent = t("heroSubtitle");
   elements.collectionTitle.textContent = t("collectionTitle");
 
@@ -296,6 +457,7 @@ function updateStaticContent() {
   elements.prevButton.setAttribute("aria-label", t("prevAria"));
   elements.nextButton.setAttribute("aria-label", t("nextAria"));
 
+  elements.bikeTabs.setAttribute("aria-label", t("tabsAria"));
   elements.dots.setAttribute("aria-label", t("carouselPaginationAria"));
 
   elements.contactEyebrow.textContent = t("contactEyebrow");
@@ -314,7 +476,9 @@ function updateStaticContent() {
 }
 
 function renderSlides() {
-  elements.track.innerHTML = bikeDesigns
+  const activeDesigns = getActiveDesigns();
+
+  elements.track.innerHTML = activeDesigns
     .map((bike, index) => {
       const shortDescription = localizeValue(bike.shortDescription);
       const details = localizeValue(bike.details);
@@ -380,7 +544,9 @@ function renderSlides() {
 }
 
 function renderDots() {
-  elements.dots.innerHTML = bikeDesigns
+  const activeDesigns = getActiveDesigns();
+
+  elements.dots.innerHTML = activeDesigns
     .map(
       (_, index) => `
         <button
@@ -422,8 +588,9 @@ function collapseExpandedDetails() {
 }
 
 function goToSlide(index) {
+  const activeDesigns = getActiveDesigns();
   const previousIndex = state.activeIndex;
-  const max = bikeDesigns.length - 1;
+  const max = activeDesigns.length - 1;
   if (index < 0) {
     state.activeIndex = max;
   } else if (index > max) {
@@ -439,6 +606,20 @@ function goToSlide(index) {
   updateCarousel();
 }
 
+function setActiveModel(modelId) {
+  if (!bikeCollectionsById[modelId] || modelId === state.activeModelId) return;
+
+  state.activeModelId = modelId;
+  state.activeIndex = 0;
+  closeLightbox();
+  collapseExpandedDetails();
+
+  updateStaticContent();
+  renderBikeTabs();
+  renderSlides();
+  updateCarousel();
+}
+
 function setLanguage(locale) {
   if (locale !== "ua" && locale !== "en") return;
 
@@ -447,6 +628,7 @@ function setLanguage(locale) {
 
   updateLanguageButtons();
   updateStaticContent();
+  renderBikeTabs();
   renderSlides();
   updateCarousel();
 }
@@ -503,6 +685,13 @@ function handleDotsClick(event) {
   if (!dot) return;
 
   goToSlide(Number(dot.dataset.index));
+}
+
+function handleBikeTabsClick(event) {
+  const tab = event.target.closest(".bike-tab");
+  if (!tab) return;
+
+  setActiveModel(tab.dataset.modelId);
 }
 
 function addSwipeSupport() {
@@ -576,6 +765,7 @@ function bindEvents() {
   elements.prevButton.addEventListener("click", () => goToSlide(state.activeIndex - 1));
   elements.nextButton.addEventListener("click", () => goToSlide(state.activeIndex + 1));
 
+  elements.bikeTabs.addEventListener("click", handleBikeTabsClick);
   elements.track.addEventListener("click", handleTrackClick);
   elements.dots.addEventListener("click", handleDotsClick);
 
@@ -601,6 +791,7 @@ function initCarousel() {
   elements.footerYear.textContent = String(new Date().getFullYear());
   updateLanguageButtons();
   updateStaticContent();
+  renderBikeTabs();
   renderSlides();
   updateCarousel();
   bindEvents();
