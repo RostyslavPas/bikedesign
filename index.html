@@ -261,12 +261,16 @@
       >
         Закрити
       </button>
-      <img
-        id="lightboxImage"
-        src=""
-        alt="Збільшений перегляд дизайну велосипеда"
-        class="mx-auto block h-auto max-h-[88dvh] w-auto max-w-[96vw] rounded-2xl border border-white/20 object-contain shadow-2xl"
-      />
+      <picture class="mx-auto block">
+        <source id="lightboxSourceAvif" type="image/avif" />
+        <source id="lightboxSourceWebp" type="image/webp" />
+        <img
+          id="lightboxImage"
+          src=""
+          alt="Збільшений перегляд дизайну велосипеда"
+          class="mx-auto block h-auto max-h-[88dvh] w-auto max-w-[96vw] rounded-2xl border border-white/20 object-contain shadow-2xl"
+        />
+      </picture>
     </div>
 
     <script src="app.js"></script>
