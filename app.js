@@ -79,8 +79,8 @@ const bikeDesigns = [
       en: "The front of the frame is finished in high-gloss Electro Violet with a dynamic chameleon pearl effect, shifting from royal purple to indigo. This transitions smoothly into a velvety Matte Onyx Black rear. The primary \"Cervélo\" logo is rendered in highly polished, sculpted Liquid Sterling Silver script, designed to look like a solid metallic inlay. Brushed satin silver accents on the inner chainstays and fork blades provide a hidden layer of sophisticated detail. This edition is a seamless blend of luxurious artistry and high-performance racing.",
       ua: "Передня частина рами виконана у високоглянцевому Electro Violet з динамічним перламутровим хамелеон-ефектом, що переливається від королівського фіолетового до індиго. Далі відтінок плавно переходить у оксамитовий Matte Onyx Black на задній частині. Основний логотип \"Cervélo\" виконаний у вигляді рельєфного Liquid Sterling Silver із дзеркальним поліруванням, наче це суцільна металева інкрустація. Брашовані сатиново-срібні акценти на внутрішніх перах і лопатях вилки додають прихований шар вишуканої деталізації. Ця версія поєднує розкішне мистецтво та гоночну продуктивність без компромісів."
     },
-    coverImage: "Pictures/preview/1.png",
-    lightboxImage: "Pictures/full/1-VioletShift.png"
+    coverImage: "Pictures/preview-optimized/1.jpg",
+    lightboxImage: "Pictures/full-optimized/1-VioletShift.jpg"
   },
   {
     edition: "ONYX CARBON STEALTH",
@@ -93,8 +93,8 @@ const bikeDesigns = [
       en: "A tactical interplay between textures within the darkest spectrum. The frame features a base of Matte Midnight Black, pressing into a complex \"Forged Carbon\" texture on select panels that reveals intricate, chaotic carbon patterns under direct sunlight. All branding, including the down tube logo, is executed in a subtle Stealth-Black or dark obsidian chrome finish for a monolithic, low-visibility look. This is the ultimate, aggressive interpretation of technical performance.",
       ua: "Тактична гра текстур у найтемнішому спектрі. База рами виконана у Matte Midnight Black, а на вибраних панелях переходить у складну текстуру \"Forged Carbon\", яка під прямим світлом відкриває хаотичні, технічні карбонові візерунки. Усе брендування, включно з логотипом на даунтюбі, зроблене в стриманому Stealth-Black або темному обсидіановому хромі, формуючи монолітний, малопомітний силует. Це максимально агресивне трактування технічної продуктивності."
     },
-    coverImage: "Pictures/preview/2.png",
-    lightboxImage: "Pictures/full/2-ForgetOnyxStealth.png"
+    coverImage: "Pictures/preview-optimized/2.jpg",
+    lightboxImage: "Pictures/full-optimized/2-ForgetOnyxStealth.jpg"
   },
   {
     edition: "MIDNIGHT EMERALD STEALTH",
@@ -107,8 +107,8 @@ const bikeDesigns = [
       en: "This sophisticated Deep Matte Emerald Teal paint appears nearly black in low light. Under direct sunlight, it glows with a rich, metallic green-blue depth. All branding is executed in Glossy Dark Chrome, offering a subtle reflection that doesn't overwhelm the unique frame color. Technical markings are kept in minimal silver-grey to maintain the \"stealth\" philosophy. It is unique, powerful, and mysterious.",
       ua: "Цей вишуканий Deep Matte Emerald Teal у слабкому освітленні виглядає майже чорним. Під прямим сонцем покриття оживає насиченою металічною глибиною зеленого та синього. Усе брендування виконане у Glossy Dark Chrome, що дає делікатний відблиск і не перекриває унікальний колір рами. Технічні маркування залишені в мінімальному сріблясто-сірому тоні, щоб зберегти \"stealth\"-філософію. Дизайн одночасно унікальний, потужний і загадковий."
     },
-    coverImage: "Pictures/preview/3.png",
-    lightboxImage: "Pictures/full/3-MidnightEmerald.png"
+    coverImage: "Pictures/preview-optimized/3.jpg",
+    lightboxImage: "Pictures/full-optimized/3-MidnightEmerald.jpg"
   },
   {
     edition: "ROYAL AMETHYST & GOLD",
@@ -121,8 +121,8 @@ const bikeDesigns = [
       en: "The frame is finished in a rich, velvety Deep Matte Purple. This royal color provides the perfect backdrop for the down tube \"Cervélo\" logo, which is reimagined in opulent, highly reflective Polished Gold. Small accents on the chainstay and pro-team logos are also rendered in fine gold ink, creating a truly regal and head-turning design.",
       ua: "Рама виконана у насиченому оксамитовому Deep Matte Purple. Цей королівський колір стає ідеальним тлом для логотипа \"Cervélo\" на даунтюбі, переосмисленого у розкішному, високо-відбивному Polished Gold. Невеликі акценти на chainstay та pro-team логотипи також нанесені тонким золотим пігментом, формуючи по-справжньому королівський дизайн, що привертає погляд."
     },
-    coverImage: "Pictures/preview/4.png",
-    lightboxImage: "Pictures/full/4-RoyalAmethyst.png"
+    coverImage: "Pictures/preview-optimized/4.jpg",
+    lightboxImage: "Pictures/full-optimized/4-RoyalAmethyst.jpg"
   },
   {
     edition: "IONIC SILVER & VIOLET",
@@ -135,8 +135,8 @@ const bikeDesigns = [
       en: "A more technical and aggressive \"cool\" design. The frame uses the same rich Deep Matte Purple base as the Royal edition, but all down tube branding and logos are rendered in a crisp, clean Satin Ionic Silver. This silver has a slight metallic gleam that gives the bike a precise, technical look, like a piece of advanced machinery.",
       ua: "Більш технічний та агресивний \"cool\"-дизайн. Рама використовує ту саму насичену базу Deep Matte Purple, що й Royal-версія, але все брендування і логотипи на даунтюбі виконані у чіткому Satin Ionic Silver. Це срібло має легкий металічний блиск, завдяки якому велосипед виглядає точно, технологічно й майже як елемент передової інженерії."
     },
-    coverImage: "Pictures/preview/5.png",
-    lightboxImage: "Pictures/full/5-IonicSilver.png"
+    coverImage: "Pictures/preview-optimized/5.jpg",
+    lightboxImage: "Pictures/full-optimized/5-IonicSilver.jpg"
   },
   {
     edition: "ONYX SLATE & LIQUID SILVER",
@@ -149,8 +149,8 @@ const bikeDesigns = [
       en: "A truly unique design, featuring a hand-painted texture that mimics Deep Slate stone, complete with a fine satiny finish. The frame appears rugged yet refined. The down tube \"Cervélo\" logo is rendered in highly polished Liquid Platinum Silver, designed to look like molten precious metal cast directly onto the stone-like surface. Brushed metal internal accents on the frame tubes reinforce the industrial-luxury soul.",
       ua: "Справді унікальний дизайн із ручною текстурою, що імітує Deep Slate-камінь і доповнена делікатним сатиновим фінішем. Рама виглядає водночас брутально та витончено. Логотип \"Cervélo\" на даунтюбі виконаний у високо-полірованому Liquid Platinum Silver, ніби розплавлений дорогоцінний метал, відлитий прямо на кам'яну поверхню. Внутрішні акценти з брашованого металу на трубах рами підкреслюють industrial-luxury характер цієї версії."
     },
-    coverImage: "Pictures/preview/6.png",
-    lightboxImage: "Pictures/full/6-OnyxCarbonStealth.png"
+    coverImage: "Pictures/preview-optimized/6.jpg",
+    lightboxImage: "Pictures/full-optimized/6-OnyxCarbonStealth.jpg"
   },
   {
     edition: "MIDNIGHT GLITCH CAMO",
@@ -163,8 +163,8 @@ const bikeDesigns = [
       en: "A multi-layered kinetic \"Glitch\" pattern executed in deep Midnight Blue and profound Black. Complex geometric shards and fractured lines give the frame an illusion of motion even when stationary. This complex pattern is cut by high-contrast, pure Optic White branding, making the logos razor-sharp. The bar tape features a matching black and white weave. This design is high-energy and disruptive.",
       ua: "Багатошаровий кінетичний патерн \"Glitch\" у глибоких відтінках Midnight Blue та насиченого Black. Складні геометричні фрагменти й ламані лінії створюють ілюзію руху навіть у статиці. Контрастне брендування у чистому Optic White ріже патерн, роблячи логотипи максимально чіткими. Обмотка керма має відповідне чорно-біле плетіння. Це енергійний, провокативний і сучасний дизайн."
     },
-    coverImage: "Pictures/preview/7.png",
-    lightboxImage: "Pictures/full/7-MidnightGlitch.png"
+    coverImage: "Pictures/preview-optimized/7.jpg",
+    lightboxImage: "Pictures/full-optimized/7-MidnightGlitch.jpg"
   },
   {
     edition: "PEARL NEBULA (Iridescent Nebula)",
@@ -177,8 +177,8 @@ const bikeDesigns = [
       en: "A deep, multi-layered White Mother-of-Pearl finish. This pearlescent paint surface shifts subtly with iridescent pink, green, and blue cosmic undertones that only reveal themselves under moving light. The primary \"Cervélo\" down tube logo is rendered in fine Satin Silver to match the sophisticated aesthetic, while smaller technical decals are applied in silver ink. It is pristine, ethereal, and undeniably luxurious.",
       ua: "Глибокий багатошаровий White Mother-of-Pearl фініш. Перламутрова поверхня м'яко переливається іридисцентними рожевими, зеленими та блакитними космічними півтонами, які проявляються лише в русі світла. Основний логотип \"Cervélo\" на даунтюбі виконаний у делікатному Satin Silver, а дрібні технічні декалі нанесені срібним чорнилом. Дизайн чистий, ефірний і безумовно розкішний."
     },
-    coverImage: "Pictures/preview/8.png",
-    lightboxImage: "Pictures/full/8-PearlescentFrost.png"
+    coverImage: "Pictures/preview-optimized/8.jpg",
+    lightboxImage: "Pictures/full-optimized/8-PearlescentFrost.jpg"
   },
   {
     edition: "THE MUSEUM SIGNATURE (Velos Artis Special)",
@@ -191,8 +191,8 @@ const bikeDesigns = [
       en: "Our flagship exhibition piece. The frame features the base velvet-matte Onyx Black with strategically placed glossy Forged Carbon panels that transition seamlessly into the Electro Violet pearl-effect top tube. The primary down tube \"Cervélo\" logo is sculpted mirror-polished sterling silver. The entire bike is presented in an impeccable, clean, ultra-luxury execution, worthy of a permanent place in a design museum display.",
       ua: "Наш флагманський виставковий екземпляр. Основа рами - velvet-matte Onyx Black із стратегічно розміщеними глянцевими панелями Forged Carbon, що безшовно переходять у top tube з перламутровим ефектом Electro Violet. Основний логотип \"Cervélo\" на даунтюбі виконаний у скульптурному sterling silver з дзеркальним поліруванням. Уся збірка подана в бездоганному ultra-luxury виконанні, гідному постійної експозиції в музеї дизайну."
     },
-    coverImage: "Pictures/preview/9.png",
-    lightboxImage: "Pictures/full/9-MuseumMasterpiece.png"
+    coverImage: "Pictures/preview-optimized/9.jpg",
+    lightboxImage: "Pictures/full-optimized/9-MuseumMasterpiece.jpg"
   },
   {
     edition: "MOLTEN EMBER",
@@ -205,8 +205,8 @@ const bikeDesigns = [
       en: "A deep matte ember-red finish gives the frame a dense, heat-soaked presence. Inner fork, stays, and seat-tube surfaces feature a lava-style glitch mix of orange, charcoal black, and deep red. The main \"Cervélo\" logo is rendered in polished liquid silver for high-contrast impact against the matte body. Darkened blue bar tape and tan-wall tires complete the race-limited character.",
       ua: "Глибокий матовий ember-red надає рамі ефекту щільного розпеченого металу. Внутрішні поверхні вилки, пір'їв і підсідельної труби отримали lava-style glitch мікс із помаранчевого, вугільно-чорного та глибокого червоного. Основний логотип \"Cervélo\" виконаний у полірованому рідкому сріблі для максимального контрасту з матовою основою. Темніша синя обмотка керма та tan-wall покришки завершують образ лімітованого гоночного дизайну."
     },
-    coverImage: "Pictures/preview/10.png",
-    lightboxImage: "Pictures/full/10-MoltenEmber.png"
+    coverImage: "Pictures/preview-optimized/10.jpg",
+    lightboxImage: "Pictures/full-optimized/10-MoltenEmber.jpg"
   },
   {
     edition: "NARDO SPECTER",
@@ -219,8 +219,8 @@ const bikeDesigns = [
       en: "This concept is built around a rich matte Nardo Grey that absorbs light and emphasizes silent speed. The down-tube \"Cervélo\" mark appears in polished liquid silver, creating a sharp technical contrast over the dark body. Accents stay restrained: deeper blue bar tape and warm tan-wall tires balance the cold-metal look. The final effect is clean, elusive, and highly performance-focused.",
       ua: "Концепт побудований навколо насиченого матового Nardo Grey, що поглинає світло й підкреслює «тиху» швидкість. Логотип \"Cervélo\" на даунтюбі виконаний у полірованому liquid silver, формуючи чіткий технологічний контраст на темній рамі. Акценти стримані: темніша синя обмотка керма та теплі tan-wall покришки балансують холодний металевий характер. У підсумку дизайн виглядає чисто, невловимо й максимально гоночно."
     },
-    coverImage: "Pictures/preview/11.png",
-    lightboxImage: "Pictures/full/11-NardoSpecter.png"
+    coverImage: "Pictures/preview-optimized/11.jpg",
+    lightboxImage: "Pictures/full-optimized/11-NardoSpecter.jpg"
   },
   {
     edition: "VISMA LEASE A BIKE TDF EDITION",
@@ -233,8 +233,8 @@ const bikeDesigns = [
       en: "Designed as a special concept for Team Visma | Lease a Bike, this edition combines high-energy race yellow with deep matte black architecture for maximum peloton visibility and speed-focused presence. The primary \"Cervélo\" branding is rendered in polished silver for crisp contrast, while technical zones stay restrained and performance-clean. The final look is bold, elite, and unmistakably Grand Tour.",
       ua: "Спеціально розроблений концепт для Team Visma | Lease a Bike: поєднання енергійного race-yellow із глибокою матово-чорною аеро-архітектурою для максимальної видимості в пелотоні та відчуття швидкості. Основний брендинг \"Cervélo\" виконаний у полірованому сріблі для чіткого контрасту, а технічні зони залишені стриманими й «чистими». У підсумку дизайн сміливий, елітний і безпомилково рівня Grand Tour."
     },
-    coverImage: "Pictures/preview/12.png",
-    lightboxImage: "Pictures/full/12-Renaissance.png"
+    coverImage: "Pictures/preview-optimized/12.jpg",
+    lightboxImage: "Pictures/full-optimized/12-Renaissance.jpg"
   }
 ];
 
@@ -250,8 +250,8 @@ const pinarelloDesigns = [
       en: "A restrained silver-forward concept tuned for modern race geometry. Satin metallic surfaces alternate with deep graphite zones, while core branding is finished in liquid-bright silver. The result is precise, technical, and unmistakably premium.",
       ua: "Стримана silver-концепція, адаптована під сучасну гоночну геометрію. Сатинові металічні площини чергуються з глибокими графітовими зонами, а ключовий брендинг виконаний у рідкому яскравому сріблі. У результаті дизайн точний, технічний і однозначно преміальний."
     },
-    coverImage: "Pictures/preview/3.png",
-    lightboxImage: "Pictures/full/3-MidnightEmerald.png"
+    coverImage: "Pictures/preview-optimized/3.jpg",
+    lightboxImage: "Pictures/full-optimized/3-MidnightEmerald.jpg"
   },
   {
     edition: "DOGMA F SHADOW",
@@ -264,8 +264,8 @@ const pinarelloDesigns = [
       en: "Built around layered blacks and low-visibility detailing, this theme emphasizes speed through texture, not color noise. Forged-style inserts appear under directional light, while dark chrome marks keep the frame monolithic and aggressive.",
       ua: "Побудований на багатошаровому чорному й low-visibility деталях, цей варіант підкреслює швидкість текстурою, а не шумом кольору. Вставки у forged-стилі проявляються в направленому світлі, а темний хром брендингу зберігає монолітний агресивний характер рами."
     },
-    coverImage: "Pictures/preview/6.png",
-    lightboxImage: "Pictures/full/6-OnyxCarbonStealth.png"
+    coverImage: "Pictures/preview-optimized/6.jpg",
+    lightboxImage: "Pictures/full-optimized/6-OnyxCarbonStealth.jpg"
   },
   {
     edition: "DOGMA F ART LINE",
@@ -278,8 +278,8 @@ const pinarelloDesigns = [
       en: "A high-energy violet gradient shifts from rich purple to dark graphite at the rear triangle. Mirror-polished silver branding adds a jewelry-grade highlight, while inner-frame accents stay subtle to keep the silhouette race-clean.",
       ua: "Енергійний violet-градієнт переходить від насиченого фіолетового до темного графіту на задньому трикутнику. Дзеркально-полірований срібний брендинг додає ювелірний акцент, а внутрішні елементи залишаються стриманими, зберігаючи чистий гоночний силует."
     },
-    coverImage: "Pictures/preview/1.png",
-    lightboxImage: "Pictures/full/1-VioletShift.png"
+    coverImage: "Pictures/preview-optimized/1.jpg",
+    lightboxImage: "Pictures/full-optimized/1-VioletShift.jpg"
   }
 ];
 
@@ -295,8 +295,8 @@ const sWorksDesigns = [
       en: "A cool technical palette designed to emphasize the SL8 silhouette. The matte graphite body is balanced by titanium-silver accents on logo zones and cockpit details, delivering a surgical and ultra-modern finish.",
       ua: "Холодна технічна палітра, що підкреслює силует SL8. Матове graphite-покриття врівноважене titanium-silver акцентами в логотипних зонах та на деталях кокпіта, створюючи максимально сучасний і «точний» фініш."
     },
-    coverImage: "Pictures/preview/11.png",
-    lightboxImage: "Pictures/full/11-NardoSpecter.png"
+    coverImage: "Pictures/preview-optimized/11.jpg",
+    lightboxImage: "Pictures/full-optimized/11-NardoSpecter.jpg"
   },
   {
     edition: "SL8 NIGHT RACE",
@@ -309,8 +309,8 @@ const sWorksDesigns = [
       en: "Nearly black indoors, alive with emerald depth in sunlight. Branding is treated in dark chrome to preserve the stealth character, while selective silver technical marks keep visual hierarchy clear at speed.",
       ua: "У приміщенні майже чорний, а на сонці розкриває глибину emerald-відтінку. Брендинг виконаний у темному хромі для збереження stealth-стилю, а точкові срібні технічні мітки тримають чітку візуальну ієрархію на швидкості."
     },
-    coverImage: "Pictures/preview/10.png",
-    lightboxImage: "Pictures/full/10-MoltenEmber.png"
+    coverImage: "Pictures/preview-optimized/10.jpg",
+    lightboxImage: "Pictures/full-optimized/10-MoltenEmber.jpg"
   },
   {
     edition: "SL8 ICON EDITION",
@@ -323,8 +323,8 @@ const sWorksDesigns = [
       en: "A layered pearl finish creates dynamic pink-green-blue shifts under motion. Satin silver branding keeps the bike elegant and controlled, while the bright body tone delivers immediate visual distinction in a race group.",
       ua: "Багатошаровий перламутровий фініш формує динамічні рожево-зелено-блакитні переливи в русі. Сатиновий срібний брендинг зберігає елегантність і контроль, а світлий корпус миттєво виділяє велосипед у гоночній групі."
     },
-    coverImage: "Pictures/preview/8.png",
-    lightboxImage: "Pictures/full/8-PearlescentFrost.png"
+    coverImage: "Pictures/preview-optimized/8.jpg",
+    lightboxImage: "Pictures/full-optimized/8-PearlescentFrost.jpg"
   }
 ];
 
@@ -363,6 +363,8 @@ const elements = {
   prevButton: document.querySelector("#prevSlide"),
   nextButton: document.querySelector("#nextSlide"),
   lightbox: document.querySelector("#lightbox"),
+  lightboxSourceAvif: document.querySelector("#lightboxSourceAvif"),
+  lightboxSourceWebp: document.querySelector("#lightboxSourceWebp"),
   lightboxImage: document.querySelector("#lightboxImage"),
   closeLightbox: document.querySelector("#closeLightbox"),
   navContactBtn: document.querySelector("#navContactBtn"),
@@ -402,6 +404,45 @@ function getActiveDesigns() {
 function getHeroTitle() {
   const modelLabel = getActiveCollection().label;
   return t("heroTitleTemplate").replace("{model}", modelLabel);
+}
+
+function isRasterImage(path) {
+  return /\.(png|jpe?g)$/i.test(path);
+}
+
+function toImageFormatPath(path, format) {
+  if (!isRasterImage(path)) return "";
+  return path.replace(/\.(png|jpe?g)$/i, `.${format}`);
+}
+
+function isPreviewResponsiveBase(path) {
+  return /^Pictures\/preview-optimized\/\d+\.jpg$/i.test(path);
+}
+
+function buildPreviewResponsivePath(path, width, format) {
+  return path.replace(/(\d+)\.jpg$/i, `$1-${width}.${format}`);
+}
+
+function getCoverMediaMarkup({ coverImage, imageAlt, imageLoading, imageFetchPriority }) {
+  const attrs = `alt="${imageAlt}" loading="${imageLoading}" decoding="async" fetchpriority="${imageFetchPriority}" draggable="false" class="h-[230px] w-full object-cover transition duration-700 group-hover:scale-[1.03] sm:h-[300px] md:h-[420px]"`;
+
+  if (isPreviewResponsiveBase(coverImage)) {
+    const sizes = "(max-width: 768px) 100vw, (max-width: 1280px) 64vw, 960px";
+    const avifSrcSet = `${buildPreviewResponsivePath(coverImage, 960, "avif")} 960w, ${buildPreviewResponsivePath(coverImage, 1440, "avif")} 1440w`;
+    const webpSrcSet = `${buildPreviewResponsivePath(coverImage, 960, "webp")} 960w, ${buildPreviewResponsivePath(coverImage, 1440, "webp")} 1440w`;
+    const jpegSrcSet = `${buildPreviewResponsivePath(coverImage, 960, "jpg")} 960w, ${buildPreviewResponsivePath(coverImage, 1440, "jpg")} 1440w`;
+    const fallbackSrc = buildPreviewResponsivePath(coverImage, 960, "jpg");
+
+    return `
+      <picture class="block h-full w-full">
+        <source type="image/avif" srcset="${avifSrcSet}" sizes="${sizes}" />
+        <source type="image/webp" srcset="${webpSrcSet}" sizes="${sizes}" />
+        <img src="${fallbackSrc}" srcset="${jpegSrcSet}" sizes="${sizes}" ${attrs} />
+      </picture>
+    `;
+  }
+
+  return `<img src="${coverImage}" ${attrs} />`;
 }
 
 function updateLanguageButtons() {
@@ -484,6 +525,8 @@ function renderSlides() {
       const details = localizeValue(bike.details);
       const openLabel = `${t("openPreview")} ${bike.title} ${t("previewSuffix")}`;
       const imageAlt = `${bike.title} ${t("bikeDesignSuffix")}`;
+      const imageLoading = index === state.activeIndex ? "eager" : "lazy";
+      const imageFetchPriority = index === state.activeIndex ? "high" : "low";
 
       return `
         <article class="w-full shrink-0">
@@ -496,11 +539,12 @@ function renderSlides() {
                 data-lightbox-alt="${bike.title}"
                 aria-label="${openLabel}"
               >
-                <img
-                  src="${bike.coverImage}"
-                  alt="${imageAlt}"
-                  class="h-[230px] w-full object-cover transition duration-700 group-hover:scale-[1.03] sm:h-[300px] md:h-[420px]"
-                />
+                ${getCoverMediaMarkup({
+                  coverImage: bike.coverImage,
+                  imageAlt,
+                  imageLoading,
+                  imageFetchPriority
+                })}
                 <div class="pointer-events-none absolute right-3 top-3 rounded-full border border-luxeSilver/50 bg-black/45 p-2 text-luxeSilver backdrop-blur-sm">
                   <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 16v5h-5" />
@@ -647,6 +691,14 @@ function toggleDetails(button) {
 }
 
 function openLightbox(imageSrc, imageAlt) {
+  if (isRasterImage(imageSrc)) {
+    elements.lightboxSourceAvif.srcset = toImageFormatPath(imageSrc, "avif");
+    elements.lightboxSourceWebp.srcset = toImageFormatPath(imageSrc, "webp");
+  } else {
+    elements.lightboxSourceAvif.removeAttribute("srcset");
+    elements.lightboxSourceWebp.removeAttribute("srcset");
+  }
+
   elements.lightboxImage.src = imageSrc;
   elements.lightboxImage.alt = imageAlt;
   elements.lightbox.classList.remove("hidden");
@@ -655,6 +707,8 @@ function openLightbox(imageSrc, imageAlt) {
 
 function closeLightbox() {
   elements.lightbox.classList.add("hidden");
+  elements.lightboxSourceAvif.removeAttribute("srcset");
+  elements.lightboxSourceWebp.removeAttribute("srcset");
   elements.lightboxImage.src = "";
   elements.lightboxImage.alt = t("lightboxImageAlt");
   document.body.style.overflow = "";
